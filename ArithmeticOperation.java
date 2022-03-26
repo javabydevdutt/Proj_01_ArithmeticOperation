@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class ArithmeticOperation{
+
+    public static int addition(int num1,int num2){
+        return num1+num2;
+    }
+    
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number-1 :- ");
@@ -19,6 +24,7 @@ public class ArithmeticOperation{
         switch(choice){
             case 1:{
              System.out.println("Addition");
+             System.out.println("Result :- " +addition(num1,num2));
              break;
             }
             case 2:{
