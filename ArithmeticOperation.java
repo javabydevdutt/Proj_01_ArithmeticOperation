@@ -5,6 +5,14 @@ public class ArithmeticOperation{
     public static int addition(int num1,int num2){
         return num1+num2;
     }
+
+    public static int subtraction(int num1,int num2){
+        return num1-num2;
+    }
+
+    public static int multiplication(int num1,int num2){
+        return num1*num2;
+    }
     
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -29,10 +37,16 @@ public class ArithmeticOperation{
             }
             case 2:{
                 System.out.println("Subtraction");
+                if(num1>=num2){
+                    System.out.println("Result :- " +subtraction(num1,num2));
+                }else{
+                    System.out.println("num2 must be greater or eqaul to num1");
+                }
                 break;
             }
             case 3:{
                 System.out.println("multiplication");
+                System.out.println("Result :- " +multiplication(num1,num2));
                 break;
             }
             case 4:{
