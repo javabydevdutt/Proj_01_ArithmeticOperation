@@ -13,6 +13,10 @@ public class ArithmeticOperation{
     public static int multiplication(int num1,int num2){
         return num1*num2;
     }
+
+    public static int division(int num1,int num2){
+        return num1/num2;
+    }
     
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -51,6 +55,11 @@ public class ArithmeticOperation{
             }
             case 4:{
                 System.out.println("Division");
+                if(num1>=num2){
+                    System.out.println("Result :- " +division(num1,num2));
+                }else{
+                    System.out.println("num1 must be greater or eqaul to num2");
+                }
                 break;
             }
             default:
